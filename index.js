@@ -1,14 +1,76 @@
-const cars = ["Saab", "Volvo", "BMW"];
-//alert();
-var n = 0;
-for (var i = 0; i < cars.length; i++) {
-    n += i;
-    console.log(cars[i])
- }
+constuctor(){
 
- var i=0; 
- while (i<=55) { 
-     document.write("El número es " + i); 
-     document.write("<br />"); 
-     i=i+1; 
+}
+sumar(num1,num2){
+    return parseInt(nume1) + parseInt(num2);
+}
+Restar(num1,num2){
+    return parseInt(num1) - parseInt(num2);
+}
+dividir(num1,num2){
+   return parseInt(num1) / parseInt(num2);
+}
+multiplicar(num1,num2){
+    return parseInt(num1) * parseInt(num2);
+}
+ponteciar(num,exp){
+    let numero = num;
+    for (var i = 1; i < exp; i++) {
+        numero = numero * num;
+    }
+    return numero;
+}
+raizCuadrada(num){
+   return Math.sqrt(num);
+}
+raizCubica(num)
+   return Math.cbrt(num);
+
+const calculadora = new calculadora();
+
+alert("¿Que operacion deseas realizar?")
+let operacion = prompt("1: suma, 2: resta, 3: divicion, 4: multiplicacion, 5: potenciacion" 6: raiz cuadrada, 7: raiz cubica);
+
+if (operacion == 1) {
+    let numero1 = prompt("primer numero para sumar");
+    let numero2 = prompt("segundo numero para sumar");
+    resultado = calculadora.sumar(numero1,numero2)
+    alert(´tu resultado es ${resultado}´);
+}
+else if (operacion == 2) {
+    let numero1 = prompt("primer numero para restar");
+    let numero2 = prompt("segundo numero para restar");
+    resultado = calculadora.resta(numero1,numero2)
+    alert(´tu resultado es ${resultado}´);
+}
+else if (operacion == 3) {
+    let numero1 = prompt("primer numero para dividir");
+    let numero2 = prompt("segundo numero para dividir");
+    resultado = calculadora.dividir(numero1,numero2)
+    alert(´tu resultado es ${resultado}´);
+}
+else if (operacion == 4) {
+    let numero1 = prompt("primer numero multiplicar");
+    let numero2 = prompt("segundo numero para multiplicar");
+    resultado = calculadora.multiplicar(numero1,numero2)
+    alert(´tu resultado es ${resultado}´);
+}
+else if (operacion == 5){
+    let numero1 = prompt("numero a potenciar");
+    let numero2 = prompt("exponente");
+    resultado = calculadora.potencia.(numero1,numero2)
+    alert(´tu resultado es ${resultado}´);
+}
+else if (operacion == 6){
+    let numero1 = prompt("conocer la raiz cuadrada de:");
+    resultado = calculadora.raizCuadrada(numero1)
+    alert (´tu resultado es ${resultado}´);
+}
+else if (operacion == 7){
+    let numero1 = prompt("conocer la raiz cubica de:");
+    resultado = calculadora.raizCubica(numero1)
+    alert (´tu resultado es ${resultado}´);
+}
+else {
+    alert("no se ha encontado la operacion")
 }
